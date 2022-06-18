@@ -1,0 +1,74 @@
+# official tutorial 
+# mkdocs-material: https://squidfunk.github.io/mkdocs-material/
+# mkdocs: https://www.mkdocs.org/user-guide/configuration/
+
+site_name: Mixing Drinks
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: cyan
+      accent: yellow  
+      toggle:
+        icon: material/weather-sunny
+    - scheme: default
+      primary: cyan
+      accent: yellow
+      toggle:
+        icon: material/weather-night
+  favicon: vha_moonblast.png
+  logo: vha_moonblast.png
+  language: zh # 中文，解决中文搜索问题
+  features:
+    # - navigation.expand #自動展開
+    - tabs 
+    - navigation.tracking #自動更新URL?
+    - navigation.top #回到最上
+    - navigation.indexes #section page
+    # - navigation.tabs #將頂級目錄放到頂欄
+    # - navigation.tabs.sticky #下滑頁面時頂欄固定不隱藏
+    # - navigation.sections
+    
+markdown_extensions: 
+  - attr_list # https://squidfunk.github.io/mkdocs-material/reference/images/
+  - pymdownx.tabbed  # https://squidfunk.github.io/mkdocs-material/reference/content-tabs/
+  - nl2br # newline-to-break 
+  - toc:
+      permalink: '#' # heading anchor 
+      slugify: !!python/name:pymdownx.slugs.uslugify # 解决中文标题解析问题
+  - admonition
+  - codehilite:
+      guess_lang: false
+      linenums: false
+  - footnotes
+  - meta
+  - def_list
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  # - pymdownx.emoji:
+      # emoji_generator: !!python/name:pymdownx.emoji.to_png
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist
+  - pymdownx.tilde
+plugins:
+  - search
+  - roamlinks 
+    #- autolinks 
+  - exclude:
+      glob:
+        - "*.tmp"
+        - "*.pdf"
+        - "*.gz"
+      regex:
+        - '.*\.(tmp|bin|tar)$'
+extra:
+  version:
+    provider: mike

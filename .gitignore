@@ -1,0 +1,16 @@
+.foam/
+.vscode/
+vscode-markdown-preview-css/
+
+.obsidian/
+.trash/
+
+docs/templates/
+
+docs/random-thoughts/
+docs/mixing/docs/
+docs/instance-related/
+
+docs/.stfolder/
+docs/.stversions/
+docs/.stignore
