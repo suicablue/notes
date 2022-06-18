@@ -15,6 +15,10 @@
 
 ## 服务端折腾笔记
 
+[[Nextcloud-Installation-Notes-on-Debian-with-nginx-and-postgresql|Nextcloud 手动安装流程（Debian+Nginx+Postgresql）]]
+
+[[Prepare-for-Installing-Self-Host-Cloud-Service|自管理云盘服务前置调差与安装流程记录]]
+
 [[filebrowser-installation|filebrowser 安装与设置]]
 
 [[API-related（需要补充）]]
@@ -50,6 +54,8 @@
 [[after-root|root 後手機管理]]
 
 ## 其他
+
+[[Apps-on-Cloudron|Cloudron 上一些我感兴趣的应用]]
 
 [[use-svg-images-in-html|做一个 HTML 图像]]
 
