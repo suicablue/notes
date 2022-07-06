@@ -26,7 +26,8 @@ umount 即可
 
 ### Group 詳解
 
-https://www.linode.com/docs/guides/linux-users-and-groups/
+[[group-and-user]]
+
 
 ## 掛載指令
 

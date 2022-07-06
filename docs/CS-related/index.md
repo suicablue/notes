@@ -1,6 +1,16 @@
 # CS 胡乱折腾笔记
 
 ## 指令相关
+[[find&grep]]
+
+[[cp]]
+
+[[apt]]
+
+[[curl]]
+
+[[group-and-user]]
+
 [[sshfs-related|SSHFS 使用]]
 
 [[docker-related|docker 简单指令]]
@@ -14,6 +24,14 @@
 [[SSH-related|SSH 相关指令与操作]]
 
 ## 服务端折腾笔记
+
+[[Zot Network 0f fediverse]]
+
+[[Installing-Filebrowser]]
+
+[[Installing-Filerun-on-Debian10]]
+
+[[Cloudreve&Aria2]]
 
 [[Nextcloud-Installation-Notes-on-Debian-with-nginx-and-postgresql|Nextcloud 手动安装流程（Debian+Nginx+Postgresql）]]
 
@@ -42,6 +60,10 @@
 [[Obsidian-notes|obsidian 教学]]
 
 ## Win 10 与硬件设备相关
+
+[[Foobar2000 - a convert tool on Windows]]
+
+[[Use Windows Media Player for CD ripping]]
 
 [[fixing-win10photos|修复 Win10 默认照片查看器]]
 

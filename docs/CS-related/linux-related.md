@@ -97,7 +97,7 @@ psql
 
 - 查看所有数据库大小
 
-`select pg_database.datname, pg_database_size(pg_database.datname) AS size from pg_database;`
+`select pg_database.datname, pg_size_pretty(pg_database_size(pg_database.datname)) AS size from pg_database;`
 
 - 以 MB 等形式显示某一数据库大小
 

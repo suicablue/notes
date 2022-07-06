@@ -51,5 +51,7 @@ git push -f origin master
 
 [快速删除Git中的敏感数据_机智的程序员小熊的博客-CSDN博客](https://coding3min.blog.csdn.net/article/details/104708390?spm=1001.2101.3001.6650.2)
 
+[don't use the obsolete BFG or git filter-branch](https://stackoverflow.com/a/61034210)
+
 ## 后续操作
 

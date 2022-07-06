@@ -28,9 +28,9 @@ sudo filebrowser -r /filebrowser
 ```
 
 之后会跳出两行，第一行说没有读取道 config，这是正常的，因为你设置；
-第二行跳出一个<IP>:<port>的东西，复制下来，粘贴到浏览器里，正常情况下，就能打开云盘了，就这么简单。
+第二行跳出一个`<IP>:<port>`的东西，复制下来，粘贴到浏览器里，正常情况下，就能打开云盘了，就这么简单。
 
-正常情况下，你的<IP>就是你 VPS 的 IP 地址，如果不是就不可能打开，需要设置 IP 地址:
+正常情况下，你的`<IP>`就是你 VPS 的 IP 地址，如果不是就不可能打开，需要设置 IP 地址:
 
 ```
 filebrowser config set --address <IP_address>
@@ -51,7 +51,7 @@ sudo filebrowser -r /filebrowser
 
 记得换掉我的网盘文件存储目录，用你自己的目录；非 root 用户要一直用 sudo，否则无权上传下载文件。
 
-现在你应该可以通过<IP>:<port>进入网盘了。
+现在你应该可以通过`<IP>:<port>`进入网盘了。
 
 进去之后，用户名和密码都输入 admin，进入界面，记得在设置里把用户名和密码都换掉！
 语言也可以换，可以试着上传个东西玩。
@@ -124,3 +124,20 @@ sudo systemctl enable filebrowser  # 设置开机自启
 sudo systemctl list-unit-files| grep filebrowser  # 看看有无设置成功
 sudo systemctl daemon-reload  # 每次调整service文件后都要执行这个指令
 ```
+
+## 疑难杂症
+### 2.0 后的 config 到底用来做什么
+
+> The configuration file `.filebrowser.json` should only be used in automatic deployments. We recommend you to use only the database file. The configuration file is more like the flags: used to override some database setting (see [https://docs.filebrowser.xyz/cli/filebrowser](https://docs.filebrowser.xyz/cli/filebrowser)).
+> 
+> `filebrowser config init` should do the trick.
+> 
+> Then you can `filebrowser config set ...` anything else you want.
+
+[关于 2.x 版本配置文件的疑问 · Issue #652 · filebrowser/filebrowser · GitHub](https://github.com/filebrowser/filebrowser/issues/652)
+
+### 頻繁 timeout
+
+>It it happening because filebrowser service locks the database file. The workaround is to copy the db file and then run cli using the `-d` flag.
+
+[filebrowser config export or filebrowser config cat always timeout · Issue #1647 · filebrowser/filebrowser · GitHub](https://github.com/filebrowser/filebrowser/issues/1647)
