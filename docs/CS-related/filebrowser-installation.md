@@ -10,6 +10,8 @@ date updated: 2022-01-11 12:43
 
 ## 安装与初步配置
 
+2022 年的安装使用尝试: [[Installing-Filebrowser|Filebrowser 安装与配置（2022）]]
+
 真的瞎折腾了好久，其实原本很简单的……
 点开 [官网安装教程](https://filebrowser.org/installation/) ，点击Unix，看到下面的命令：
 

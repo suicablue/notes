@@ -9,6 +9,8 @@ aliases: Filebrowser 安装与配置（2022）
 
 # Filebrowser 安装与配置（2022）
 
+之前的安装: [[filebrowser-installation|filebrowser 安装与设置]]
+
 仅将 Filebrowser 当作网盘使用，为预防可能的权限问题，新建一个新用户 filebrowser 并让它做为之后下载得到的 filebrowser 执行程序、filebrowser.db 与指定根目录的所有者。
 
 ## 初步安装与设置
