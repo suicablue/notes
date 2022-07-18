@@ -1,0 +1,2403 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../vha_brandtini.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.6">
+    
+    
+      
+        <title>如何利用 obsidian 高效建立笔记 - suica's notes</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4a0965b7.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="cyan">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#笔记标题" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="suica&#39;s notes" class="md-header__button md-logo" aria-label="suica's notes" data-md-component="logo">
+      
+  <img src="../../vha_brandtini.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            suica's notes
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              如何利用 obsidian 高效建立笔记
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="cyan"  aria-label=""  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="cyan"  aria-label=""  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="清空当前内容" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../" class="md-tabs__link md-tabs__link--active">
+        CS related
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Games%26Movies%26Books/" class="md-tabs__link">
+        Games&Movies&Books
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../mixing/" class="md-tabs__link">
+        Mixing
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="suica&#39;s notes" class="md-nav__button md-logo" aria-label="suica's notes" data-md-component="logo">
+      
+  <img src="../../vha_brandtini.png" alt="logo">
+
+    </a>
+    suica's notes
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../">CS related</a>
+          
+            <label for="__nav_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="CS related" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          CS related
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../API-related%EF%BC%88%E9%9C%80%E8%A6%81%E8%A1%A5%E5%85%85%EF%BC%89/" class="md-nav__link">
+        API 相关教程
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Apps-on-Cloudron/" class="md-nav__link">
+        Cloudron 上一些我感兴趣的应用
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CS-random%EF%BC%88%E9%9C%80%E8%A6%81%E8%A1%A5%E5%85%85%EF%BC%89/" class="md-nav__link">
+        cs 的这些那些
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Cloudreve%26Aria2/" class="md-nav__link">
+        Cloudreve&Aria2 离线下载
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DNS-related%EF%BC%88%E9%9C%80%E8%A6%81%E8%A1%A5%E5%85%85%EF%BC%89/" class="md-nav__link">
+        DNS 优化
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Foobar2000%20-%20a%20convert%20tool%20on%20Windows/" class="md-nav__link">
+        Foobar2000 - Windows 上的音频转换工具（播放器）
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Git-related/" class="md-nav__link">
+        Git 学习
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Github-commit/" class="md-nav__link">
+        Github 回滚代码——利用 commit 进行回溯
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Installing-Filebrowser/" class="md-nav__link">
+        Filebrowser 安装与配置（2022）
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Installing-Filerun-on-Debian10/" class="md-nav__link">
+        在 Debian 10 上安装 Filerun
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Intermittent-diary/" class="md-nav__link">
+        怎么写间歇式日记
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MKDocs-notes-installation-and-deployment/" class="md-nav__link">
+        MKDocs 的安装与部署（搭配 Obsidian ）
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Music-Source/" class="md-nav__link">
+        音源获取与版权杂记
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Nextcloud-Installation-Notes-on-Debian-with-nginx-and-postgresql/" class="md-nav__link">
+        Nextcloud 手动安装流程
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          如何利用 obsidian 高效建立笔记
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        如何利用 obsidian 高效建立笔记
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#笔记标题" class="md-nav__link">
+    笔记标题
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metadata" class="md-nav__link">
+    metadata
+  </a>
+  
+    <nav class="md-nav" aria-label="metadata">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#可以尝试使用的-metadatastatus" class="md-nav__link">
+    可以尝试使用的 metadata（status）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#模板" class="md-nav__link">
+    模板
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dataview-插件" class="md-nav__link">
+    dataview 插件
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#资料库的数量" class="md-nav__link">
+    资料库的数量
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#同步到移动端sync的注意事项" class="md-nav__link">
+    同步到移动端（Sync）的注意事项
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#利用-git-插件定时自动备份笔记" class="md-nav__link">
+    利用 Git 插件定时自动备份笔记
+  </a>
+  
+    <nav class="md-nav" aria-label="利用 Git 插件定时自动备份笔记">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#部署准备" class="md-nav__link">
+    部署准备
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#初步设置" class="md-nav__link">
+    初步设置
+  </a>
+  
+    <nav class="md-nav" aria-label="初步设置">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#拓展阅读windows-多个-ssh-key-的设置与管理" class="md-nav__link">
+    拓展阅读：Windows 多个 ssh-key 的设置与管理
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#新建-repository-并上传笔记" class="md-nav__link">
+    新建 repository 并上传笔记
+  </a>
+  
+    <nav class="md-nav" aria-label="新建 repository 并上传笔记">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#github-注意事项" class="md-nav__link">
+    github 注意事项
+  </a>
+  
+    <nav class="md-nav" aria-label="github 注意事项">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#拓展学习github-commit" class="md-nav__link">
+    拓展学习：Github-commit
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#obsidian-插件设置" class="md-nav__link">
+    obsidian 插件设置
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#想要发布转换-wikilinks-为一般静态博客支持的链接" class="md-nav__link">
+    想要发布？转换 wikilinks 为一般静态博客支持的链接
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Prepare-for-Installing-Self-Host-Cloud-Service/" class="md-nav__link">
+        自管理云盘服务前置调差与安装流程记录
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Purge-old-commits/" class="md-nav__link">
+        彻底删除旧的 git 提交记录
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SSH-related/" class="md-nav__link">
+        SSH 相关指令与操作
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Use%20Windows%20Media%20Player%20for%20CD%20ripping/" class="md-nav__link">
+        使用 Windows Media Player 翻录 CD
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Win10-input-related/" class="md-nav__link">
+        Win 10 输入法相关
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Zot%20Network%200f%20fediverse/" class="md-nav__link">
+        了解 zot 系 fediverse 应用（Hubzilla、Zap）
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about-to-do-list/" class="md-nav__link">
+        to-do list 值得一篇單獨的筆記（
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../adb/" class="md-nav__link">
+        adb 調試
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../after-root/" class="md-nav__link">
+        root 後手機管理
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../apps-for-notes/" class="md-nav__link">
+        笔记软件汇总
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../apt/" class="md-nav__link">
+        Apt 指令
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cp/" class="md-nav__link">
+        cp 命令
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../curl/" class="md-nav__link">
+        curl 命令
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docker-related/" class="md-nav__link">
+        docker-related
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../filebrowser-installation/" class="md-nav__link">
+        filebrowser 安装与设置
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../find%26grep/" class="md-nav__link">
+        查找命令
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fixing-win10photos/" class="md-nav__link">
+        修复 Win10 默认照片查看器
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../group-and-user/" class="md-nav__link">
+        Linux 用户与组
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../linux-related/" class="md-nav__link">
+        散漫 linux 学习笔记
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../markdown-notes/" class="md-nav__link">
+        玩转 Obsidian 03：间歇式日记 - 少数派 n 语法备忘
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../multiple-vaults-managment/" class="md-nav__link">
+        筆記、博文與多項目管理
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notes-and-personal-wiki/" class="md-nav__link">
+        Foam、Obsidian、Hugo、Mkdocs————笔记写作与发布探索之旅
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sshfs-related/" class="md-nav__link">
+        SSHFS 使用
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../use-svg-images-in-html/" class="md-nav__link">
+        做一个 HTML 图像
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../Games%26Movies%26Books/">Games&Movies&Books</a>
+          
+            <label for="__nav_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Games&Movies&Books" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Games&Movies&Books
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Games%26Movies%26Books/arcane/" class="md-nav__link">
+        雙城之戰的邊緣感想
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Games%26Movies%26Books/random-thoughts-about-FightClub/" class="md-nav__link">
+        搏击俱乐部电影观感
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Games%26Movies%26Books/red-embrace-hollywood-part1/" class="md-nav__link">
+        RE：H - 游玩记录 part1（一周目&Heath 常规线）
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Games%26Movies%26Books/red-embrace-hollywood-part2/" class="md-nav__link">
+        RE：H 游玩记录 part2（Randal 常规线 end1&4）
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Games%26Movies%26Books/red-embrace-hollywood-part3/" class="md-nav__link">
+        RE：H 游玩记录 part3（Randal & Heath 特殊线）
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../mixing/">Mixing</a>
+          
+            <label for="__nav_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Mixing" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Mixing
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mixing/latte-challenge/" class="md-nav__link">
+        做一杯普普通通好拿鐵挑戰拿鐵
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_4_3" type="checkbox" id="__nav_4_3" checked>
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../mixing/cocktails/">Cocktails</a>
+          
+            <label for="__nav_4_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Cocktails" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_3">
+          <span class="md-nav__icon md-icon"></span>
+          Cocktails
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mixing/cocktails/Favourite/" class="md-nav__link">
+        調酒相關收藏文章
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mixing/cocktails/IBA-Cocktail/" class="md-nav__link">
+        國際調酒師協會官方雞尾酒列表
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mixing/cocktails/cocktails-easy-to-make/" class="md-nav__link">
+        家庭超简易调酒
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_4_3_5" type="checkbox" id="__nav_4_3_5" checked>
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../mixing/cocktails/Cocktail-Reading/">Cocktail Reading</a>
+          
+            <label for="__nav_4_3_5">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Cocktail Reading" data-md-level="3">
+        <label class="md-nav__title" for="__nav_4_3_5">
+          <span class="md-nav__icon md-icon"></span>
+          Cocktail Reading
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mixing/cocktails/Cocktail-Reading/les-cocktails-c%27est-pas-sorcier/" class="md-nav__link">
+        Les cocktails c'est pas sorcier
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_4_3_6" type="checkbox" id="__nav_4_3_6" checked>
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../mixing/cocktails/Cocktail-Recipes/">Cocktail Recipes</a>
+          
+            <label for="__nav_4_3_6">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Cocktail Recipes" data-md-level="3">
+        <label class="md-nav__title" for="__nav_4_3_6">
+          <span class="md-nav__icon md-icon"></span>
+          Cocktail Recipes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mixing/cocktails/Cocktail-Recipes/Amarero-Sour-improved/" class="md-nav__link">
+        Amaretto Sour Improved
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mixing/cocktails/Cocktail-Recipes/Apple-Hot-Toddy/" class="md-nav__link">
+        蘋果熱托蒂
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mixing/cocktails/Cocktail-Recipes/Casino/" class="md-nav__link">
+        Casino
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mixing/cocktails/Cocktail-Recipes/Cosmopolitan/" class="md-nav__link">
+        Cosmopolitan
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mixing/cocktails/Cocktail-Recipes/Espresso-Martini/" class="md-nav__link">
+        Espresso Martini
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mixing/cocktails/Cocktail-Recipes/Manhattan/" class="md-nav__link">
+        Manhattan
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mixing/cocktails/Cocktail-Recipes/Singapore-Sling/" class="md-nav__link">
+        Singapore Sling
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mixing/cocktails/Cocktail-Recipes/Zombie/" class="md-nav__link">
+        Zombie
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mixing/cocktails/Cocktail-Recipes/pisco-sour/" class="md-nav__link">
+        Pisco sour
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_4_3_7" type="checkbox" id="__nav_4_3_7" checked>
+      
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../mixing/cocktails/Glasses/">Glasses</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Glasses" data-md-level="3">
+        <label class="md-nav__title" for="__nav_4_3_7">
+          <span class="md-nav__icon md-icon"></span>
+          Glasses
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_4_3_8" type="checkbox" id="__nav_4_3_8" checked>
+      
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../mixing/cocktails/Methods/">Methods</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Methods" data-md-level="3">
+        <label class="md-nav__title" for="__nav_4_3_8">
+          <span class="md-nav__icon md-icon"></span>
+          Methods
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_4_3_9" type="checkbox" id="__nav_4_3_9" checked>
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../mixing/cocktails/Spirits/">Spirits</a>
+          
+            <label for="__nav_4_3_9">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Spirits" data-md-level="3">
+        <label class="md-nav__title" for="__nav_4_3_9">
+          <span class="md-nav__icon md-icon"></span>
+          Spirits
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mixing/cocktails/Spirits/151-proof/" class="md-nav__link">
+        151 proof
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mixing/cocktails/Spirits/Angostura%20Bitters/" class="md-nav__link">
+        Angostura Bitters
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_4_3_10" type="checkbox" id="__nav_4_3_10" checked>
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../mixing/cocktails/Types/">Types</a>
+          
+            <label for="__nav_4_3_10">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Types" data-md-level="3">
+        <label class="md-nav__title" for="__nav_4_3_10">
+          <span class="md-nav__icon md-icon"></span>
+          Types
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mixing/cocktails/Types/Collins/" class="md-nav__link">
+        Collins
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mixing/cocktails/Types/Daisy/" class="md-nav__link">
+        Daisy
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mixing/cocktails/Types/Fizz/" class="md-nav__link">
+        Fizz
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mixing/cocktails/Types/Flip/" class="md-nav__link">
+        Flip
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mixing/cocktails/Types/Punch/" class="md-nav__link">
+        Punch 賓治
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mixing/cocktails/Types/Sour/" class="md-nav__link">
+        Sour
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mixing/cocktails/Types/Tiki/" class="md-nav__link">
+        Tiki
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mixing/cocktails/Types/Unknown/" class="md-nav__link">
+        類別不確定的雞尾酒
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#笔记标题" class="md-nav__link">
+    笔记标题
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metadata" class="md-nav__link">
+    metadata
+  </a>
+  
+    <nav class="md-nav" aria-label="metadata">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#可以尝试使用的-metadatastatus" class="md-nav__link">
+    可以尝试使用的 metadata（status）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#模板" class="md-nav__link">
+    模板
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dataview-插件" class="md-nav__link">
+    dataview 插件
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#资料库的数量" class="md-nav__link">
+    资料库的数量
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#同步到移动端sync的注意事项" class="md-nav__link">
+    同步到移动端（Sync）的注意事项
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#利用-git-插件定时自动备份笔记" class="md-nav__link">
+    利用 Git 插件定时自动备份笔记
+  </a>
+  
+    <nav class="md-nav" aria-label="利用 Git 插件定时自动备份笔记">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#部署准备" class="md-nav__link">
+    部署准备
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#初步设置" class="md-nav__link">
+    初步设置
+  </a>
+  
+    <nav class="md-nav" aria-label="初步设置">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#拓展阅读windows-多个-ssh-key-的设置与管理" class="md-nav__link">
+    拓展阅读：Windows 多个 ssh-key 的设置与管理
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#新建-repository-并上传笔记" class="md-nav__link">
+    新建 repository 并上传笔记
+  </a>
+  
+    <nav class="md-nav" aria-label="新建 repository 并上传笔记">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#github-注意事项" class="md-nav__link">
+    github 注意事项
+  </a>
+  
+    <nav class="md-nav" aria-label="github 注意事项">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#拓展学习github-commit" class="md-nav__link">
+    拓展学习：Github-commit
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#obsidian-插件设置" class="md-nav__link">
+    obsidian 插件设置
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#想要发布转换-wikilinks-为一般静态博客支持的链接" class="md-nav__link">
+    想要发布？转换 wikilinks 为一般静态博客支持的链接
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+  <h1>如何利用 obsidian 高效建立笔记</h1>
+
+<h2 id="笔记标题">笔记标题<a class="headerlink" href="#笔记标题" title="Permanent link">#</a></h2>
+<p>标题应尽可能详尽地阐释笔记内容（概念导向），比如：</p>
+<blockquote>
+<ul>
+<li>番茄鐘 (x)</li>
+<li>使用番茄鐘可以有效提升效率 (o)</li>
+</ul>
+<p><a href="https://medium.com/pm%E7%9A%84%E7%94%9F%E7%94%A2%E5%8A%9B%E5%B7%A5%E5%85%B7%E7%AE%B1/%E4%BB%80%E9%BA%BC%E6%98%AF-evergreen-note-%E9%95%B7%E9%9D%92%E7%AD%86%E8%A8%98-5f0b2c7b6547">朱琪 - 什麼是 Evergreen Note (長青筆記)？</a></p>
+</blockquote>
+<p>为了实践，我将标题从没有太多信息的“obsidian”改为了“如何利用 obsidian 建立有记效的连结笔记”，同时决定本篇我们只讲笔记，不回顾基础操作，也不看应用部分。</p>
+<h2 id="metadata">metadata<a class="headerlink" href="#metadata" title="Permanent link">#</a></h2>
+<p>obsidian 的 metadata 与 hugo、hexo 等静态博客一样都是 YAML 格式，metadata 的名称没有限制，名称后输入冒号，冒号后一定有一个空格，空格后输入内容，格式详见 <a href="obsidian://open?vault=Obsidian%20Help&amp;file=Advanced%20topics%2FYAML%20front%20matter">YAML front matter</a> 。<br />
+注意，链接无法使用 markdown 格式，标签不需要标注#。<br />
+aliases 是别名。<br />
+可以利用 obsidian 的模板官方插件快速建立[[metadata]]。</p>
+<h3 id="可以尝试使用的-metadatastatus">可以尝试使用的 metadata（status）<a class="headerlink" href="#可以尝试使用的-metadatastatus" title="Permanent link">#</a></h3>
+<p>可以试着将笔记分为三种状态（status）：</p>
+<ul>
+<li>发芽期</li>
+<li>培育期</li>
+<li>长青期</li>
+</ul>
+<p>Evergreen Note 认为笔记存在发展时期，需要不断复习巩固，最后才能变为自己的知识。</p>
+<h2 id="模板">模板<a class="headerlink" href="#模板" title="Permanent link">#</a></h2>
+<p>模板是 obsidian 的核心插件，开启后，需要在设置中指定一个文件夹放置模板文件。如果文件夹中仅有一个文件，那么插入模板时将直接插入该模板（即该文件下的所有内容）；如果文件夹下存在多个文件，插入时将询问插入哪一个模板。<br />
+模板配合快捷键使用效果最佳，请在设置中为插入模板设置快捷键。</p>
+<p>在设置中可指定日期、时间格式。<br />
+以日期为例，设置中填入 YYYY-MM-DD_ddd，并在模板文件夹下的文件中放置板块{{date: YYYY-MM-DD_ddd}}，之后在笔记中插入模板时，模板文件中的{{date: YYYY-MM-DD_ddd}}将自动被替换为当天的日期。如[[daily notes]]。</p>
+<h2 id="dataview-插件">dataview 插件<a class="headerlink" href="#dataview-插件" title="Permanent link">#</a></h2>
+<p>dataview 是进阶插件，初步探索 obsidian 的阶段没有必要花太多时间弄明白。<br />
+简单来说，dataview 可以根据笔记上的某些要素（如标题、标签、作者）快速生成目录，最常见的有：</p>
+<ul>
+<li>生成同一作者的笔记目录</li>
+<li>生成标题中含有相同关键词的笔记目录</li>
+<li>生成某一标签下的笔记目录</li>
+</ul>
+<p>只有在笔记量足够大的前提下，dataview 才能形成具有参考价值的目录。<br />
+上述三种使用场景的应用方法请参考 <a href="https://sspai.com/post/68183">Obsidian 插件之 Dataview</a> 。</p>
+<p>注意 dataview 首字母小写。</p>
+<p>为了未来有效使用这款强大的插件，现阶段记笔记时可以有意识地使用 tag、将标题写得尽可能详尽并标注 metadata。</p>
+<h2 id="资料库的数量">资料库的数量<a class="headerlink" href="#资料库的数量" title="Permanent link">#</a></h2>
+<p>一般来说，我们只需要建立一个资料库即可满足笔记记录需求，建立第二个资料库往往意味着第一个资料库中的笔记过于繁杂混乱，我建议整理资料库而不是新建，因为新建的资料库中的笔记无法与之前的资料库笔记互联，如果你想将资料库 A 中的笔记关联到资料库 B，<a href="#"></a>将失去作用，你只能使用复制 obsidian 网址并使用 markdown 的方法进行连结，这种方法是低效的。（不清楚有没有第三方插件可以解决这个问题）</p>
+<p>之前的资料库中所有的设置也需要再次进行设置，尤其是 git 插件。</p>
+<h2 id="同步到移动端sync的注意事项">同步到移动端（Sync）的注意事项<a class="headerlink" href="#同步到移动端sync的注意事项" title="Permanent link">#</a></h2>
+<p>这里只阐述付费功能 Sync 的一个应用场景。</p>
+<p>如果你一定要建立一个新的资料库，并且使用了 sync 付费功能，将它连接到了远程资料库并同步到其他设备，你需要连接到一个新的远程资料库（一共可以设置五个远程资料库）。<br />
+如果你连接到之前的远程资料库，之前的资料库上的笔记将全部导入进新资料库中，造成混乱。<br />
+之后，就像第一次将手机和电脑同步起来一样，需要在手机上再次建立同名本地资料库，并将资料库连接至远程资料库。</p>
+<p>远程资料库一次只能启动一个，这意味着你只能同时同步一个资料库，除非上一个资料库已经不需要使用，否则不建议这样做。</p>
+<p><strong>请不要随意删除远程资料库</strong>，如果你不再需要某个远程资料库，请确保当前与之连接的本地资料库中没有重要笔记，且每个设备的同步状态都关闭。一旦删除远程资料库，且删除时同步状态未关闭，<strong>与之连接的本地资料库中的笔记也将被全部删除</strong>，这样删除后的笔记**无法找回**。</p>
+<p>不再使用 Sync 功能的话，断线即可，删除前请确保笔记安全。</p>
+<h2 id="利用-git-插件定时自动备份笔记">利用 Git 插件定时自动备份笔记<a class="headerlink" href="#利用-git-插件定时自动备份笔记" title="Permanent link">#</a></h2>
+<p>在差点因为误删远程资料库丢掉全部笔记之后，我决定将笔记在 github 上进行备份（当然，也可以选择 gitlab、gitee 等，gitee 速度可能在内陆更快）。</p>
+<h3 id="部署准备">部署准备<a class="headerlink" href="#部署准备" title="Permanent link">#</a></h3>
+<p>下面以 github 为例，先保证你有一个 github 账号并在电脑上下载 git，不必下载 github desktop，代码照抄稍微修改就好。</p>
+<h3 id="初步设置">初步设置<a class="headerlink" href="#初步设置" title="Permanent link">#</a></h3>
+<p>如果你原来搭建过 hexo、hugo 等静态博客，那么这个过程会很熟悉。<br />
+如果没有，首先你需要生成 SSH 密钥对。<br />
+打开 git bash。<br />
+不确定是否创建过的话：<br />
+<code>cd ~/.ssh</code><br />
+若显示 <code>No such file or directory</code>，则表示没有创建过，反之省略这步。</p>
+<p>第一次使用 git 需要先配置用户名和邮箱：</p>
+<div class="highlight"><pre><span></span><code>git config --global user.name &lt;username&gt;
+git config --global user.email &lt;useremail&quot;&gt;
+</code></pre></div>
+<p>（我的用户名和邮箱与 github 一致，但似乎此处的信息仅用于 git 提交代码时显示身份和联系方式）<br />
+（reference: <a href="https://www.cnblogs.com/superGG1990/p/6844952.html">初次使用 git 配置以及 git 如何使用 ssh 密钥（将 ssh 密钥添加到 github）</a> ）</p>
+<p>之后，输入 <code>ssh-keygen -t rsa -C &lt;useremail&gt;</code>（更换邮箱）生成密钥对，不要设置 passphrase，否则 obsidian 之后无法自动部署。<br />
+生成后，复制公钥：<br />
+<code>cat ~/.ssh/id_rsa.pub</code><br />
+将这串以 ssh-rsa 开头邮箱结尾的结果复制下来。（如果你之前通过 git 或其他途径生成过密钥对，但没有将公钥添加到 github 中，你同样需要将你的公钥复制下来，记住是以 ssh-rsa 开头、文本较短的那一个）</p>
+<p>到 github 点击账户下标，找到 Settings，点击进入。在左侧栏找到 <a href="https://github.com/settings/keys">SSH and GPG keys</a> ，点击绿色按钮"New SSH key"，在新页面输入刚刚复制的公钥，标题随意。</p>
+<p>回到 git 界面，验证 SSH key 是否正常工作：<br />
+<code>ssh -T git@github.com</code><br />
+若显示：<br />
+Hi XXX! You've successfully authenticated, but GitHub does not provide shell access.<br />
+则代表 SSH key 工作正常，可以开始把 obsidian 上的笔记往 github 上丢啦~</p>
+<h4 id="拓展阅读windows-多个-ssh-key-的设置与管理">拓展阅读：Windows 多个 ssh-key 的设置与管理<a class="headerlink" href="#拓展阅读windows-多个-ssh-key-的设置与管理" title="Permanent link">#</a></h4>
+<p><a href="https://www.cnblogs.com/popfisher/p/5731232.html">Windows 下 Git 多账号配置，同一电脑多个 ssh-key 的管理</a></p>
+<h3 id="新建-repository-并上传笔记">新建 repository 并上传笔记<a class="headerlink" href="#新建-repository-并上传笔记" title="Permanent link">#</a></h3>
+<p>进入 github，点头像旁的加号，"New repository"。<br />
+如果你不想别人看你的笔记，就设置为私人，下面选项不需要选。<br />
+之后页面跳转到你新建的 repository，注意到页面上有这么一堆代码：</p>
+<div class="highlight"><pre><span></span><code>echo &quot;# test&quot; &gt;&gt; README.md
+git init
+git add README.md
+git commit -m &quot;first commit&quot;
+git branch -M master
+git remote add origin git@github.com:xxx/xxx.git
+git push -u origin master
+</code></pre></div>
+<p>在 git 上进入你 obsidian 笔记存放的目录，比方说你存在 D: \obsidian\notes 目录下：<br />
+<code>cd D: \obsidian\notes</code><br />
+之后，一行行在 git 界面上执行，如果你前面的步骤都没有问题，这里应该不会报错。<br />
+没什么问题的话，push 后刷新 github 页面，你的笔记就全都出现在上面了！</p>
+<h4 id="github-注意事项">github 注意事项<a class="headerlink" href="#github-注意事项" title="Permanent link">#</a></h4>
+<p>对 git 操作不熟悉的话，请尽量不要在 github 页面上添加、删除、修改文件或进行任何变动，远程和本地存在差异的话，push 可能会无法进行。</p>
+<h5 id="拓展学习github-commit">拓展学习：<a href="../Github-commit/">Github-commit</a><a class="headerlink" href="#拓展学习github-commit" title="Permanent link">#</a></h5>
+<h3 id="obsidian-插件设置">obsidian 插件设置<a class="headerlink" href="#obsidian-插件设置" title="Permanent link">#</a></h3>
+<p>在第三方插件中下载并启用 Git，上面操作无误的话，这里便会开始自动部署；如果上面设置有误右上角是会报错的，同时页面下方可以看到 git 的状态。<br />
+在设置中可以对自动备份时间间隔进行调整，0 代表不备份。</p>
+<p>暂不清楚 git 是否可以代替云同步与 sync，理论上，电脑端 push 到远程，手机端从远程 pull 下来笔记（需要手机安装终端模拟器并验证 SSH），手机 push 到远程，电脑 pull 接收，应该是没什么问题的，但我想这需要将自动备份关闭，改为手动备份会比较妥当，否则两边可能出现冲突导致操作失败。<br />
+已经在使用 sync 的话，手机应该没有必要开 git 并下载其他辅助程序，在手机对笔记进行修改时，sync 将修改同步到电脑，电脑会自动通过 git 备份到 github。</p>
+<h2 id="想要发布转换-wikilinks-为一般静态博客支持的链接">想要发布？转换 wikilinks 为一般静态博客支持的链接<a class="headerlink" href="#想要发布转换-wikilinks-为一般静态博客支持的链接" title="Permanent link">#</a></h2>
+<p>我看过很多使用 Obsidian 在本地写作的人将 wikilinks 关闭，仅使用 markdown 通用语法来达到方便迁移与发布的目的。但随着支持 wikilinks 的应用越来越多、应用间语法转换越来越便捷，似乎没有必要这么麻烦地使用原始语法而抛弃便捷友好的 wikilinks ，抛去初次写作时编辑链接的麻烦先不讲，整个文档的结构很可能在未来发生多次变化，忘记或记不清要更改哪些内部链接会造成很多麻烦，白白损耗效率。</p>
+<p>我找到了一些通过不同方式将 wikilinks 转换为静态博客 hugo 可识别的普通 markdown 语法的工具，全部来源于 github ：<br />
+- <a href="https://github.com/jackyzha0/quartz/issues/16">quartz - issues/16</a><br />
+- <a href="https://github.com/zoni/obsidian-export">obsidian-export</a><br />
+- <a href="https://github.com/milafrerichs/hugo-wikilinks">hugo-wikilinks</a><br />
+- <a href="https://github.com/balaji-dutt/zettel-hugo-postmaker">zettel-hugo-postmaker</a></p>
+<p>參考鏈接：<br />
+<a href="https://medium.com/pm%E7%9A%84%E7%94%9F%E7%94%A2%E5%8A%9B%E5%B7%A5%E5%85%B7%E7%AE%B1/obsidian-%E4%BD%BF%E7%94%A8%E6%95%99%E5%AD%B8-%E5%9F%BA%E7%A4%8E%E7%AF%87-05-%E5%A6%82%E4%BD%95%E8%AA%BF%E6%95%B4-obsidian-app-%E8%A8%AD%E5%AE%9A%E6%AA%94-6ed8d168ae0e">【Obsidian 使用教學】基礎篇 05 — 如何調整 Obsidian App 設定檔？ 讓 Obsidian App 擁有自己的外觀主題與插件 | by 朱騏 | PM 的生產力工具箱 | Medium</a></p>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            回到页面顶部
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="页脚" >
+      
+        
+        <a href="../Nextcloud-Installation-Notes-on-Debian-with-nginx-and-postgresql/" class="md-footer__link md-footer__link--prev" aria-label="上一页: Nextcloud 手动安装流程" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              Nextcloud 手动安装流程
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../Prepare-for-Installing-Self-Host-Cloud-Service/" class="md-footer__link md-footer__link--next" aria-label="下一页: 自管理云盘服务前置调差与安装流程记录" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              自管理云盘服务前置调差与安装流程记录
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["tabs", "navigation.tabs", "navigation.tabs.sticky", "navigation.expand", "navigation.tracking", "navigation.top", "navigation.indexes"], "search": "../../assets/javascripts/workers/search.85cb4492.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\uff0c\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version.title": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.a877e258.min.js"></script>
+      
+    
+  </body>
+</html>
